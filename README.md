@@ -77,6 +77,3 @@ The PDF is generated from the `/cv` page, so the two stay identical. After editi
 
 3. Open the PDF and confirm it is one page.
 
-## Deploying
-
-Any Next.js host works, for example [Vercel](https://vercel.com/new). The contribution graph needs outbound network access to `github.com` at build and revalidation time.
