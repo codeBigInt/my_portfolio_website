@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import ContributionGraph from "../components/ContributionGraph";
+import ArrowUpRight from "../components/ArrowUpRight";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Elliot Lucky",
+  title: "Portfolio | Elliot Lucky",
   description:
-    "Open-source contributions and personal projects by Elliot Lucky — Rust, TypeScript, and Midnight blockchain development.",
+    "Open-source contributions and personal projects by Elliot Lucky: Rust, TypeScript, and Midnight blockchain development.",
 };
 
 const STATS = [
@@ -21,7 +22,7 @@ const CONTRIBUTIONS = [
     repo: "Knight-Shield-Wallet/wallet-v2",
     org: "KnightShield Wallet",
     title:
-      "Technical founding lead — building the installable PWA Midnight wallet at knightshieldedwallet.tech with Matt Cobbert",
+      "Technical founding lead, building the installable PWA Midnight wallet at knightshieldedwallet.tech with Matt Cobbert",
     href: "https://github.com/Knight-Shield-Wallet/wallet-v2",
     tag: "Lead",
   },
@@ -36,7 +37,7 @@ const CONTRIBUTIONS = [
     repo: "statera-protocol/statera-protocol-midnight",
     org: "Statera Protocol",
     title:
-      "CI/CD pipeline, automated deployment, and liquidation monitoring bot — 16 merged PRs",
+      "CI/CD pipeline, automated deployment, and liquidation monitoring bot: 16 merged PRs",
     href: "https://github.com/statera-protocol/statera-protocol-midnight/pulls?q=is%3Apr+author%3AcodeBigInt+is%3Amerged",
     tag: "16 merged",
   },
@@ -44,7 +45,7 @@ const CONTRIBUTIONS = [
     repo: "LucentLabss/ckb-dex",
     org: "LucentLabs",
     title:
-      "Frontend layout, faucet drip, deserialization fixes, and deployment — 5 merged PRs",
+      "Frontend layout, faucet drip, deserialization fixes, and deployment: 5 merged PRs",
     href: "https://github.com/LucentLabss/ckb-dex/pulls?q=is%3Apr+author%3AcodeBigInt+is%3Amerged",
     tag: "5 merged",
   },
@@ -52,7 +53,7 @@ const CONTRIBUTIONS = [
     repo: "scisamir/fiber-dev-kit",
     org: "Community",
     title:
-      "TypeScript test client, example demo, and documentation — 10 merged PRs",
+      "TypeScript test client, example demo, and documentation: 10 merged PRs",
     href: "https://github.com/scisamir/fiber-dev-kit/pulls?q=is%3Apr+author%3AcodeBigInt+is%3Amerged",
     tag: "10 merged",
   },
@@ -103,22 +104,10 @@ const PERSONAL_PROJECTS = [
     href: "https://github.com/codeBigInt/usetenth",
   },
   {
-    name: "link-sharing-app",
-    description:
-      "A clean, responsive link-sharing app focused on frontend polish and usability.",
-    href: "https://github.com/codeBigInt/link-sharing-app",
-  },
-  {
     name: "tokio-basic",
     description:
-      "Fundamentals of async Rust — learning project on Tokio and TCP servers.",
+      "Fundamentals of async Rust. Learning project on Tokio and TCP servers.",
     href: "https://github.com/codeBigInt/tokio-basic",
-  },
-  {
-    name: "ckb-auth",
-    description:
-      "A consolidated library featuring blockchain authentication techniques on CKB-VM.",
-    href: "https://github.com/codeBigInt/ckb-auth",
   },
   {
     name: "chat-pdf-ai",
@@ -152,7 +141,7 @@ export default function PortfolioPage() {
               rel="noopener noreferrer"
               className="rounded-full bg-ink px-4 py-2 text-xs font-medium uppercase tracking-wider text-paper transition-opacity hover:opacity-80"
             >
-              GitHub ↗
+              GitHub <ArrowUpRight />
             </a>
           </div>
         </div>
@@ -170,7 +159,7 @@ export default function PortfolioPage() {
         </h1>
         <p className="mt-5 max-w-xl text-base leading-relaxed text-ink/65 sm:text-lg">
           A closer look at what I&apos;ve shipped, contributed, and maintained
-          in the open — from the official Midnight Network repo to community
+          in the open, from the official Midnight Network repo to community
           tooling and my own experiments.
         </p>
 
@@ -261,7 +250,7 @@ export default function PortfolioPage() {
               rel="noopener noreferrer"
               className="text-sm text-ink/60 underline decoration-ink/20 underline-offset-4 hover:text-ink hover:decoration-ink"
             >
-              See all 47 repositories on GitHub ↗
+              See all 47 repositories on GitHub <ArrowUpRight />
             </a>
           </div>
         </section>

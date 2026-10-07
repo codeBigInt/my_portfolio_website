@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import ArrowUpRight from "./ArrowUpRight";
 
 const SOCIALS = [
   {
@@ -63,7 +64,7 @@ export default function Contact() {
                 <span className="text-sm font-medium text-ink">
                   {social.handle}{" "}
                   <span className="text-ink/30 transition-transform group-hover:translate-x-1 inline-block">
-                    ↗
+                    <ArrowUpRight />
                   </span>
                 </span>
               </a>

@@ -1,11 +1,12 @@
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import ArrowUpRight from "./ArrowUpRight";
 
 const ACHIEVEMENTS = [
   {
-    title: "Midnight Aliit Fellow — Cohort 0",
+    title: "Midnight Aliit Fellow, Cohort 0",
     org: "Midnight Network",
-    period: "Nov 2025 — Present",
+    period: "Nov 2025 to Present",
     description:
       "Selected on merit as the only Aliit Fellowship Ambassador representing Nigeria and Africa in the inaugural cohort, contributing open-source DApps, reference implementations, and educational content to the Midnight ecosystem.",
     tag: "Fellowship",
@@ -21,7 +22,7 @@ const ACHIEVEMENTS = [
     ],
   },
   {
-    title: "Finance Track Winner — HydraStake",
+    title: "Finance Track Winner: HydraStake",
     org: "Midnight London Summit Hackathon",
     period: "Nov 2025",
     description:
@@ -35,7 +36,7 @@ const ACHIEVEMENTS = [
     ],
   },
   {
-    title: "Overall Winner — Statera",
+    title: "Overall Winner: Statera",
     org: "Midnight Mini-DApps Hackathon",
     period: "Aug 2025",
     description:
@@ -49,7 +50,7 @@ const ACHIEVEMENTS = [
     ],
   },
   {
-    title: "Won the African Blockchain Championship — FundAGoal",
+    title: "Won the African Blockchain Championship: FundAGoal",
     org: "African Blockchain Championship, Midnight Track",
     period: "Jul 2025",
     description:
@@ -105,7 +106,7 @@ export default function Achievements() {
                           rel="noopener noreferrer"
                           className="text-xs font-medium text-ink/60 underline decoration-ink/20 underline-offset-4 hover:text-ink hover:decoration-ink"
                         >
-                          {link.label} ↗
+                          {link.label} <ArrowUpRight />
                         </a>
                       ))}
                     </div>

@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import ArrowUpRight from "./ArrowUpRight";
 
 const POSTS = [
   {
@@ -32,7 +33,7 @@ export default function Writing() {
 
         <p className="mb-10 max-w-2xl text-sm leading-relaxed text-ink/60 sm:text-base">
           I write publicly about what I learn building on Midnight and getting
-          started in blockchain development — tutorials, real errors, and the
+          started in blockchain development: tutorials, real errors, and the
           fixes that worked.
         </p>
 
@@ -54,7 +55,7 @@ export default function Writing() {
                   </h3>
                 </div>
                 <span className="shrink-0 text-ink/30 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-ink">
-                  ↗
+                  <ArrowUpRight />
                 </span>
               </a>
             </Reveal>
@@ -70,7 +71,7 @@ export default function Writing() {
               rel="noopener noreferrer"
               className="text-sm text-ink/60 underline decoration-ink/20 underline-offset-4 transition-colors hover:text-ink hover:decoration-ink"
             >
-              More on {p.label} ↗
+              More on {p.label} <ArrowUpRight />
             </a>
           ))}
         </div>

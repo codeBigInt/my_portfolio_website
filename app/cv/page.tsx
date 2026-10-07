@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArrowUpRight from "../components/ArrowUpRight";
 
 export const metadata: Metadata = {
-  title: "CV — Elliot Lucky",
+  title: "CV | Elliot Lucky",
   description:
-    "CV of Elliot Lucky — full-stack and Midnight blockchain developer. View online or download the PDF.",
+    "CV of Elliot Lucky, full-stack and Midnight blockchain developer. View online or download the PDF.",
 };
 
 const CV_PDF = "/elliot-lucky-cv.pdf";
+const CV_DOWNLOAD = "/cv/download";
+
+const HNG_CERTIFICATE =
+  "https://drive.google.com/file/d/1B0b2Va-PofoLic0JqLiifrs2LQc5ULPc/view?usp=sharing";
 
 const ORG_LINKS: Record<string, string> = {
   "KnightShield Wallet": "https://knightshieldedwallet.tech",
@@ -35,7 +40,7 @@ const EXPERIENCE = [
   {
     role: "Co-Founder",
     org: "SwiftGigs",
-    period: "2025 — Present",
+    period: "2025 to Present",
     bullets: [
       "Co-founded a service marketplace startup connecting skilled gig workers with clients across Nigeria.",
     ],
@@ -52,7 +57,7 @@ const EXPERIENCE = [
   {
     role: "Co-Founder & Lead Midnight Blockchain Developer",
     org: "LucentLabs",
-    period: "Jan 2025 — Present",
+    period: "Jan 2025 to Present",
     bullets: [
       "Co-founded LucentLabs and lead a team of 3 Midnight blockchain developers across privacy-preserving DeFi products: Statera, HydraStake, Midnight Launchpad, FundAGoal, and ckb-dex.",
       "Own architecture decisions, code review, and Compact smart contract implementation.",
@@ -61,9 +66,9 @@ const EXPERIENCE = [
   {
     role: "Smart Contract Developer (Intern)",
     org: "Fluid Tokens",
-    period: "Feb 2025 — Present",
+    period: "Feb 2025 to Present",
     bullets: [
-      "Built on-chain lending logic for a fully shielded lending protocol — positions, liquidity, borrowing, repayment.",
+      "Built on-chain lending logic for a fully shielded lending protocol: positions, liquidity, borrowing, repayment.",
       "Reduced contract failure risk by 95% through on-chain testnet testing with a CLI DApp interface.",
     ],
   },
@@ -79,7 +84,8 @@ const EXPERIENCE = [
   {
     role: "Frontend Developer",
     org: "HNG Internship (i11)",
-    period: "Jun 2024 — Aug 2024",
+    period: "Jun 2024 to Aug 2024",
+    certificate: HNG_CERTIFICATE,
     bullets: [
       "Finished top two frontend developer out of 24,234 applicants.",
       "Helped ship Remote Bingo, a real-time multiplayer game room, using REST APIs, WebSockets, and modern state management.",
@@ -88,11 +94,11 @@ const EXPERIENCE = [
 ];
 
 const ACHIEVEMENTS = [
-  "Midnight Aliit Fellow, Cohort 0 — only ambassador representing Nigeria and Africa (Nov 2025)",
-  "Winner, Midnight London Summit Hackathon — Finance Track, HydraStake (Nov 2025)",
-  "Winner, Midnight Mini-DApps Hackathon — Statera (Aug 2025)",
-  "Winner, African Blockchain Championship — Midnight Track, FundAGoal (Jul 2025)",
-  "Finalist, HNG Internship i11 — top two of 24,234 applicants (2024)",
+  "Midnight Aliit Fellow, Cohort 0: only ambassador representing Nigeria and Africa (Nov 2025)",
+  "Winner, Midnight London Summit Hackathon: Finance Track, HydraStake (Nov 2025)",
+  "Winner, Midnight Mini-DApps Hackathon: Statera (Aug 2025)",
+  "Winner, African Blockchain Championship: Midnight Track, FundAGoal (Jul 2025)",
+  "Finalist, HNG Internship i11: top two of 24,234 applicants (2024)",
 ];
 
 const SKILLS = [
@@ -113,7 +119,7 @@ export default function CvPage() {
   return (
     <div className="min-h-screen bg-paper text-ink">
       <header className="border-b border-line px-6 py-4 print:hidden">
-        <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4">
+        <div className="mx-auto flex max-w-5xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
           <Link
             href="/"
             className="text-sm text-ink/60 transition-colors hover:text-ink"
@@ -121,10 +127,10 @@ export default function CvPage() {
             ← Back to portfolio
           </Link>
 
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+          <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center sm:gap-3">
             <a
               href="/portfolio"
-              className="rounded-full border border-ink/25 px-4 py-2 text-xs font-medium uppercase tracking-wider text-ink transition-colors hover:border-ink"
+              className="whitespace-nowrap rounded-full border border-ink/25 px-2 py-2 text-center text-[11px] font-medium uppercase tracking-wide text-ink transition-colors hover:border-ink sm:px-4 sm:text-xs sm:tracking-wider"
             >
               Portfolio
             </a>
@@ -132,16 +138,16 @@ export default function CvPage() {
               href={CV_PDF}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-ink/25 px-4 py-2 text-xs font-medium uppercase tracking-wider text-ink transition-colors hover:border-ink"
+              className="whitespace-nowrap rounded-full border border-ink/25 px-2 py-2 text-center text-[11px] font-medium uppercase tracking-wide text-ink transition-colors hover:border-ink sm:px-4 sm:text-xs sm:tracking-wider"
             >
               Open PDF
             </a>
             <a
-              href={CV_PDF}
+              href={CV_DOWNLOAD}
               download="Elliot-Lucky-CV.pdf"
-              className="rounded-full bg-ink px-4 py-2 text-xs font-medium uppercase tracking-wider text-paper transition-opacity hover:opacity-80"
+              className="whitespace-nowrap rounded-full bg-ink px-2 py-2 text-center text-[11px] font-medium uppercase tracking-wide text-paper transition-opacity hover:opacity-80 sm:px-4 sm:text-xs sm:tracking-wider"
             >
-              Download CV
+              Download<span className="hidden sm:inline"> CV</span>
             </a>
           </div>
         </div>
@@ -190,7 +196,7 @@ export default function CvPage() {
                     <h3 className="text-sm font-semibold text-ink">
                       {job.role}{" "}
                       <span className="font-normal text-ink/50">
-                        —{" "}
+                        at{" "}
                         {ORG_LINKS[job.org] ? (
                           <a
                             href={ORG_LINKS[job.org]}
@@ -212,6 +218,14 @@ export default function CvPage() {
                       <li key={b}>{b}</li>
                     ))}
                   </ul>
+                  {"certificate" in job && job.certificate && (
+                    <a
+                      href={job.certificate}
+                      className="mt-2 inline-block text-xs text-ink/60 underline decoration-ink/20 underline-offset-2"
+                    >
+                      View certificate <ArrowUpRight />
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
@@ -228,7 +242,7 @@ export default function CvPage() {
                 Ahmadu Bello University (ABU), Zaria
               </p>
               <p className="mt-1 text-xs uppercase tracking-wider text-ink/40">
-                Dec 2019 — Sep 2025
+                Dec 2019 to Sep 2025
               </p>
             </section>
 

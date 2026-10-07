@@ -14,9 +14,9 @@ const archivoBlack = Archivo_Black({
 });
 
 export const metadata: Metadata = {
-  title: "Elliot Lucky — Full-Stack & Blockchain Developer",
+  title: "Elliot Lucky | Full-Stack & Blockchain Developer",
   description:
-    "Portfolio of Elliot Lucky (codeBigInt), a full-stack developer building with Rust, TypeScript, React, and Next.js — currently on Midnight and CKB.",
+    "Portfolio of Elliot Lucky (codeBigInt), a full-stack developer building with Rust, TypeScript, React, and Next.js, currently on Midnight and CKB.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

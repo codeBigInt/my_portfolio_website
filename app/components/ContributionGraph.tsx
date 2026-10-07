@@ -1,5 +1,6 @@
 import { GITHUB_USER, getContributions } from "../lib/github-contributions";
 import Reveal from "./Reveal";
+import ArrowUpRight from "./ArrowUpRight";
 
 const LEVEL_COLORS = [
   "rgba(20,20,20,0.07)",
@@ -45,7 +46,7 @@ export default async function ContributionGraph() {
         rel="noopener noreferrer"
         className="text-sm text-ink/60 underline decoration-ink/20 underline-offset-4 hover:text-ink hover:decoration-ink"
       >
-        See my contributions on GitHub ↗
+        See my contributions on GitHub <ArrowUpRight />
       </a>
     );
   }
@@ -82,7 +83,7 @@ export default async function ContributionGraph() {
             rel="noopener noreferrer"
             className="text-xs text-ink/55 underline decoration-ink/20 underline-offset-4 hover:text-ink hover:decoration-ink"
           >
-            @{GITHUB_USER} on GitHub ↗
+            @{GITHUB_USER} on GitHub <ArrowUpRight />
           </a>
         </div>
 

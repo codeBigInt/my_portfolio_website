@@ -9,9 +9,9 @@ export default function Hero() {
       <div className="mx-auto max-w-5xl">
         <div className="hero-in mb-10 flex flex-wrap items-start justify-between gap-6">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-ink/45">
-            Portfolio — 2026
+            Portfolio 2026
           </p>
-          <div className="space-y-0.5 text-right text-sm text-ink/55">
+          <div className="hidden space-y-0.5 text-right text-sm text-ink/55 sm:block">
             <p>( Elliot Lucky )</p>
             <p>( elliotlucky509@gmail.com )</p>
             <p>( Based in Nigeria )</p>
@@ -23,7 +23,7 @@ export default function Hero() {
             className="hero-in flex flex-col justify-center pb-14 sm:pb-20"
             style={{ animationDelay: "120ms" }}
           >
-            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-ink/50">
+            <p className="mb-3 whitespace-nowrap text-[clamp(0.6rem,3vw,0.875rem)] font-medium uppercase tracking-[0.12em] text-ink/50 sm:tracking-[0.2em]">
               Full-Stack &amp; Blockchain Developer
             </p>
             <h1
@@ -36,8 +36,8 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink/60 sm:text-lg">
-              I build reliable, well-crafted software across the stack —
-              currently shipping on Midnight and CKB, and always quick to pick
+              I build reliable, well-crafted software across the stack.
+              Currently shipping on Midnight and CKB, and always quick to pick
               up whatever the problem needs.
             </p>
 

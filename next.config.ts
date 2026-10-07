@@ -23,6 +23,7 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  allowedDevOrigins: ['rident-nonservilely-belva.ngrok-free.dev']
 };
 
 export default nextConfig;

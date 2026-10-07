@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
+import ArrowUpRight from "./ArrowUpRight";
 
 const PROJECTS = [
   {
@@ -12,7 +13,7 @@ const PROJECTS = [
   {
     name: "SwiftGigs",
     description:
-      "A service marketplace startup I'm co-founding — connecting skilled gig workers with clients across Nigeria.",
+      "A service marketplace startup I'm co-founding, connecting skilled gig workers with clients across Nigeria.",
     stack: "Startup · Next.js · Marketplace",
     href: "https://swiftgigs.com.ng",
   },
@@ -52,7 +53,7 @@ const PROJECTS = [
     href: "https://github.com/LucentLabss/ckb-dex",
   },
   {
-    name: "Veil — Reputation Scoring",
+    name: "Veil: Reputation Scoring",
     description:
       "A cross-chain reputation and credit scoring protocol built on Midnight and CKB for privacy-preserving DeFi.",
     stack: "TypeScript · Midnight · CKB",
@@ -61,7 +62,7 @@ const PROJECTS = [
   {
     name: "my_redis",
     description:
-      "A personal, from-scratch implementation of Redis in Rust — built to understand the internals of in-memory data stores.",
+      "A personal, from-scratch implementation of Redis in Rust, built to understand the internals of in-memory data stores.",
     stack: "Rust · Systems · TCP",
     href: "https://github.com/codeBigInt/my_redis",
   },
@@ -97,7 +98,7 @@ export default function Projects() {
                   </p>
                 </div>
                 <span className="text-ink/30 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-ink">
-                  ↗
+                  <ArrowUpRight />
                 </span>
               </a>
             </Reveal>
@@ -117,7 +118,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="text-sm text-ink/60 underline decoration-ink/20 underline-offset-4 hover:text-ink hover:decoration-ink"
           >
-            All repositories on GitHub ↗
+            All repositories on GitHub <ArrowUpRight />
           </a>
         </div>
       </div>

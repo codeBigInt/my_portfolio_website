@@ -9,7 +9,11 @@ const FACTS = [
       "Lead Midnight Blockchain Developer, LucentLabs and Lead Midnight Intern at Fluid Tokens",
   },
   { label: "Core stack", value: "Rust, TypeScript, Compact" },
-  { label: "Also building", value: "SwiftGigs (co-founder), KnightShield Wallet (technical founding lead)" },
+  {
+    label: "Also building",
+    value:
+      "SwiftGigs (co-founder), KnightShield Wallet (technical founding lead)",
+  },
 ];
 
 export default function About() {
@@ -31,10 +35,10 @@ export default function About() {
             <p>
               Alongside that, I&apos;m co-founding{" "}
               <span className="font-medium text-ink">SwiftGigs</span>, a service
-              marketplace startup. On the web side I cover the full stack —
-              React and Next.js on the frontend, Node.js and Express on the
-              backend — and I&apos;m comfortable containerizing services with
-              Docker for lightweight deployment and hosting.
+              marketplace startup. On the web side I cover the full stack: React
+              and Next.js on the frontend, Node.js and Express on the backend,
+              and I&apos;m comfortable containerizing services with Docker for
+              lightweight deployment and hosting.
             </p>
             <p>
               I was selected on merit as the only{" "}
