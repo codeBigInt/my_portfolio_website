@@ -1,37 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Elliot Lucky — Portfolio
 
-## Getting Started
+Personal portfolio of Elliot Lucky (codeBigInt), a full-stack and blockchain developer currently building on Midnight and CKB.
 
-First, run the development server:
+Built with Next.js 16 (App Router, Cache Components), React 19, TypeScript and Tailwind CSS 4.
+
+## Pages
+
+| Route        | What it is                                                                                              |
+| ------------ | ------------------------------------------------------------------------------------------------------- |
+| `/`          | Home: hero, about, experience, achievements, videos, articles, skills, selected work, contributions, contact |
+| `/portfolio` | Open-source contributions and personal projects, with the GitHub contribution graph                     |
+| `/cv`        | Online CV with links to open or download the PDF (`public/elliot-lucky-cv.pdf`)                          |
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install      # or npm install
+bun dev          # or npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Other scripts: `build`, `start` (serve the production build) and `lint`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+app/
+  page.tsx              Home page, composed from the components below
+  layout.tsx            Fonts (Inter, Archivo Black) and site metadata
+  globals.css           Theme tokens, scroll-reveal and hero animations
+  cv/page.tsx           CV page (also the source for the PDF)
+  portfolio/page.tsx    Contributions and projects
+  components/           Section components (Hero, About, Experience, ...)
+  lib/
+    github-contributions.ts   Fetches the GitHub contribution calendar
+public/
+  elliot-lucky-cv.pdf   Downloadable CV
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Editing content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Content lives in plain arrays at the top of each file, so updates are small edits:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Experience: `app/components/Experience.tsx` (and `EXPERIENCE` in `app/cv/page.tsx`)
+- Selected work: `app/components/Projects.tsx`
+- Achievements: `app/components/Achievements.tsx`
+- Articles: `app/components/Writing.tsx` (and `ARTICLES` in `app/cv/page.tsx`)
+- Videos: `app/components/Videos.tsx`
+- Open-source contributions and stats: `app/portfolio/page.tsx`
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Responsive:** checked for horizontal overflow from 320px up to desktop widths.
+- **Scroll animations:** sections fade up as they enter the viewport (`app/components/Reveal.tsx`). Animations are disabled for visitors who prefer reduced motion.
+- **Live contribution graph:** reads GitHub's public contribution calendar for `GITHUB_USER` (set in `app/lib/github-contributions.ts`) for the current year, cached with `use cache` and refreshed hourly. If GitHub can't be reached, it falls back to a link to the profile. It shows only what is public on the profile.
+- **Monochrome theme:** colours are defined as tokens in `app/globals.css`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# my_portfolio_website
+## Updating the CV PDF
+
+The PDF is generated from the `/cv` page, so the two stay identical. After editing `app/cv/page.tsx`:
+
+1. Build and start the site: `bun run build && bun run start`.
+2. Print `/cv` to PDF at A4 with backgrounds on, zero margins and a scale of about 0.75 so it fits on one page. For example, with Playwright:
+
+   ```js
+   await page.goto("http://localhost:3000/cv", { waitUntil: "networkidle" });
+   await page.pdf({
+     path: "public/elliot-lucky-cv.pdf",
+     format: "A4",
+     printBackground: true,
+     scale: 0.75,
+     margin: { top: "0", bottom: "0", left: "0", right: "0" },
+   });
+   ```
+
+3. Open the PDF and confirm it is one page.
+
+## Deploying
+
+Any Next.js host works, for example [Vercel](https://vercel.com/new). The contribution graph needs outbound network access to `github.com` at build and revalidation time.
