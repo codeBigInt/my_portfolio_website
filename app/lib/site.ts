@@ -31,6 +31,10 @@ export const KEYWORDS = [
   "KnightShield Wallet",
   "Fluid Tokens",
   "SwiftGigs",
+  "nite-api",
+  "nite-zk-profiler",
+  "Compact VS Code extension",
+  "npm packages",
   "Nigeria developer",
   "African blockchain developer",
 ];

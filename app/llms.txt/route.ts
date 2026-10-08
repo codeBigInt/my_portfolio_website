@@ -28,6 +28,12 @@ ${PAGES.map((page) => `- [${page.title}](${url(page.path)}): ${page.description}
 - [FundAGoal](https://github.com/codeBigInt/fundagoal): Privacy-focused campaign funding DApp on Midnight. Winner, African Blockchain Championship.
 - [SwiftGigs](https://swiftgigs.com.ng): Service marketplace connecting gig workers with clients in Nigeria.
 
+## Published packages
+
+- [nite-api](https://www.npmjs.com/package/nite-api): Dynamic contract API wrapper for Midnight Compact smart contracts. Source: https://github.com/nite-framework/nite-api
+- [@nite-framework/nite-zk-profiler](https://www.npmjs.com/package/@nite-framework/nite-zk-profiler): See what a Compact circuit costs to prove, without generating proving keys. Source: https://github.com/nite-framework/nite-zk-profiler
+- [Nite Compact VS Code extension](https://open-vsx.org/extension/codebigint/nite-compact): Live compiler-backed diagnostics, completion, symbols and formatting for Compact. Source: https://github.com/nite-framework/nite-compact-language-vsc-extension
+
 ## Writing and video
 
 - [Medium](${PROFILES.medium})

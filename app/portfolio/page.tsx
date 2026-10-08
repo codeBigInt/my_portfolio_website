@@ -83,6 +83,24 @@ const CONTRIBUTIONS = [
 
 const PERSONAL_PROJECTS = [
   {
+    name: "nite-api",
+    description:
+      "Published npm package: a dynamic contract API wrapper for Midnight Compact smart contracts.",
+    href: "https://github.com/nite-framework/nite-api",
+  },
+  {
+    name: "nite-zk-profiler",
+    description:
+      "Published npm package (@nite-framework/nite-zk-profiler): see what a Compact circuit costs to prove, without generating proving keys.",
+    href: "https://github.com/nite-framework/nite-zk-profiler",
+  },
+  {
+    name: "nite-compact-language-vsc-extension",
+    description:
+      "Nite Compact, a VS Code extension published on Open VSX with live compiler-backed diagnostics, completion, symbols and formatting for Compact.",
+    href: "https://github.com/nite-framework/nite-compact-language-vsc-extension",
+  },
+  {
     name: "fundagoal",
     description:
       "Privacy-focused campaign funding DApp on Midnight. Winner, African Blockchain Championship.",

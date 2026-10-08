@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
+import Packages from "./components/Packages";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Videos from "./components/Videos";
@@ -24,6 +25,7 @@ export default function Home() {
         <Writing />
         <Skills />
         <Projects />
+        <Packages />
         <Activity />
         <Contact />
       </main>

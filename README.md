@@ -48,6 +48,7 @@ Content lives in plain arrays at the top of each file, so updates are small edit
 - Achievements: `app/components/Achievements.tsx`
 - Articles: `app/components/Writing.tsx` (and `ARTICLES` in `app/cv/page.tsx`)
 - Videos: `app/components/Videos.tsx`
+- Published packages: `app/components/Packages.tsx`
 - Open-source contributions and stats: `app/portfolio/page.tsx`
 
 ## Features
