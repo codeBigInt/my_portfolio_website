@@ -1,7 +1,7 @@
 // Single source of truth for SEO: metadata, sitemap, robots and llms.txt.
 // Set NEXT_PUBLIC_SITE_URL in the hosting environment to the live domain.
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://elliotlucky.vercel.app"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://elliotlucky.com"
 ).replace(/\/$/, "");
 
 export const SITE_NAME = "Elliot Lucky";

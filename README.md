@@ -62,7 +62,7 @@ Content lives in plain arrays at the top of each file, so updates are small edit
 
 All SEO settings read from `app/lib/site.ts` (site URL, title, description, keywords, social profiles, pages list).
 
-- **Site URL:** set `NEXT_PUBLIC_SITE_URL` in your host (for example `https://yourdomain.com`). It defaults to `https://elliotlucky.vercel.app`.
+- **Site URL:** set `NEXT_PUBLIC_SITE_URL` in your host (for example `https://yourdomain.com`). It defaults to `https://elliotlucky.com`.
 - **Metadata:** title template, description, keywords, canonical URLs, Open Graph, Twitter cards and robots directives in `app/layout.tsx` and per page. A generated social card lives in `app/opengraph-image.tsx`.
 - **Structured data:** JSON-LD `WebSite` and `Person` graph in `app/layout.tsx`.
 - **Crawl files:** `/sitemap.xml` (`app/sitemap.ts`), `/sitemap.txt` (`app/sitemap.txt/route.ts`), `/robots.txt` (`app/robots.ts`) and `/llms.txt` (`app/llms.txt/route.ts`).

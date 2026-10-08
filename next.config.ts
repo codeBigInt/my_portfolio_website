@@ -7,6 +7,17 @@ const nextConfig: NextConfig = {
   },
   cacheComponents: true,
   partialPrefetching: true,
+  async redirects() {
+    // Keep a single canonical host for search engines.
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "elliotlucky.vercel.app" }],
+        destination: "https://elliotlucky.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
