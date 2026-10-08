@@ -8,10 +8,10 @@ export default function Hero() {
     >
       <div className="mx-auto max-w-5xl">
         <div className="hero-in mb-10 flex flex-wrap items-start justify-between gap-6">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-ink/45">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-ink/60">
             Portfolio 2026
           </p>
-          <div className="hidden space-y-0.5 text-right text-sm text-ink/55 sm:block">
+          <div className="hidden space-y-0.5 text-right text-sm text-ink/60 sm:block">
             <p>( Elliot Lucky )</p>
             <p>( elliotlucky509@gmail.com )</p>
             <p>( Based in Nigeria )</p>
@@ -19,11 +19,8 @@ export default function Hero() {
         </div>
 
         <div className="grid grid-cols-1 items-end gap-12 md:grid-cols-[1.15fr_0.85fr]">
-          <div
-            className="hero-in flex flex-col justify-center pb-14 sm:pb-20"
-            style={{ animationDelay: "120ms" }}
-          >
-            <p className="mb-3 whitespace-nowrap text-[clamp(0.6rem,3vw,0.875rem)] font-medium uppercase tracking-[0.12em] text-ink/50 sm:tracking-[0.2em]">
+          <div className="hero-in flex flex-col justify-center pb-14 sm:pb-20">
+            <p className="mb-3 whitespace-nowrap text-[clamp(0.6rem,3vw,0.875rem)] font-medium uppercase tracking-[0.12em] text-ink/60 sm:tracking-[0.2em]">
               Full-Stack &amp; Blockchain Developer
             </p>
             <h1
@@ -78,10 +75,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div
-            className="hero-in flex items-center justify-center md:justify-end"
-            style={{ animationDelay: "280ms" }}
-          >
+          <div className="flex items-center justify-center md:justify-end">
             <div className="relative w-full max-w-[340px] sm:max-w-[420px] md:max-w-[460px]">
               <div className="absolute inset-x-0 bottom-0 aspect-square w-full rounded-full bg-ink/[0.07]" />
               <Image

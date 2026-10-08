@@ -41,7 +41,7 @@ export default function Contact() {
             SOMETHING.
           </h3>
 
-          <div className="mt-10 space-y-0.5 text-sm text-ink/55">
+          <div className="mt-10 space-y-0.5 text-sm text-ink/60">
             <p>( Elliot Lucky )</p>
             <p>( Co-Founder &amp; Lead Developer @ LucentLabs )</p>
             <p>( Based in Nigeria, working remote )</p>
@@ -58,7 +58,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="group flex flex-1 flex-col gap-1 px-1 py-5 transition-colors hover:bg-ink/[0.03] sm:px-6"
               >
-                <span className="text-xs font-medium uppercase tracking-wider text-ink/40">
+                <span className="text-xs font-medium uppercase tracking-wider text-ink/60">
                   {social.label}
                 </span>
                 <span className="text-sm font-medium text-ink">

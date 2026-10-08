@@ -81,7 +81,7 @@ export default async function ContributionGraph() {
             href={profile}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-ink/55 underline decoration-ink/20 underline-offset-4 hover:text-ink hover:decoration-ink"
+            className="text-xs text-ink/60 underline decoration-ink/20 underline-offset-4 hover:text-ink hover:decoration-ink"
           >
             @{GITHUB_USER} on GitHub <ArrowUpRight />
           </a>
@@ -92,7 +92,7 @@ export default async function ContributionGraph() {
           aria-label={`${data.total} GitHub contributions in ${data.year}`}
         >
           <div
-            className="mb-1 grid gap-[2px] text-[9px] leading-none text-ink/45 sm:gap-[3px] sm:text-[11px]"
+            className="mb-1 grid gap-[2px] text-[9px] leading-none text-ink/60 sm:gap-[3px] sm:text-[11px]"
             style={{ gridTemplateColumns: `repeat(${weeks}, minmax(0, 1fr))` }}
           >
             {labels.map((l) => (
@@ -128,7 +128,7 @@ export default async function ContributionGraph() {
           </div>
         </div>
 
-        <div className="mt-4 flex items-center justify-end gap-1.5 text-[11px] text-ink/45">
+        <div className="mt-4 flex items-center justify-end gap-1.5 text-[11px] text-ink/60">
           Less
           {LEVEL_COLORS.map((c) => (
             <span

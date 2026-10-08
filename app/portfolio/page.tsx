@@ -181,7 +181,7 @@ export default function PortfolioPage() {
       </header>
 
       <main className="mx-auto max-w-5xl px-6 py-14">
-        <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-ink/45">
+        <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-ink/60">
           Open source &amp; projects
         </p>
         <h1
@@ -212,7 +212,7 @@ export default function PortfolioPage() {
               <p className="font-display text-3xl text-ink sm:text-4xl">
                 {stat.value}
               </p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-ink/45">
+              <p className="mt-1 text-xs uppercase tracking-wider text-ink/60">
                 {stat.label}
               </p>
             </div>
@@ -235,7 +235,7 @@ export default function PortfolioPage() {
                 className="group grid grid-cols-1 items-baseline gap-2 py-6 sm:grid-cols-[1fr_auto] sm:gap-6"
               >
                 <div>
-                  <p className="text-sm font-medium text-ink/50">{item.org}</p>
+                  <p className="text-sm font-medium text-ink/60">{item.org}</p>
                   <h3 className="mt-1 text-base font-semibold text-ink underline decoration-transparent decoration-2 underline-offset-4 transition-colors group-hover:decoration-ink">
                     {item.repo}
                   </h3>

@@ -87,7 +87,7 @@ export default function Achievements() {
                     {item.title}
                   </h3>
                   <p className="mt-0.5 text-sm text-ink/60">{item.org}</p>
-                  <p className="mt-1 text-xs uppercase tracking-wider text-ink/40">
+                  <p className="mt-1 text-xs uppercase tracking-wider text-ink/60">
                     {item.period}
                   </p>
                 </div>

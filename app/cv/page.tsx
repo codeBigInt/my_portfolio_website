@@ -170,7 +170,7 @@ export default function CvPage() {
       <main className="mx-auto max-w-4xl px-6 py-14">
         <div className="grid grid-cols-1 items-end gap-8 border-b border-line pb-10 sm:grid-cols-[1.3fr_1fr]">
           <div>
-            <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-ink/45">
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-ink/60">
               Curriculum Vitae
             </p>
             <h1
@@ -187,7 +187,7 @@ export default function CvPage() {
           </div>
 
           <div className="sm:text-right">
-            <div className="space-y-0.5 text-sm text-ink/55">
+            <div className="space-y-0.5 text-sm text-ink/60">
               <p>( elliotlucky509@gmail.com )</p>
               <p>( github.com/codeBigInt )</p>
               <p>( Based in Nigeria )</p>
@@ -209,7 +209,7 @@ export default function CvPage() {
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                     <h3 className="text-sm font-semibold text-ink">
                       {job.role}{" "}
-                      <span className="font-normal text-ink/50">
+                      <span className="font-normal text-ink/60">
                         at{" "}
                         {ORG_LINKS[job.org] ? (
                           <a
@@ -223,7 +223,7 @@ export default function CvPage() {
                         )}
                       </span>
                     </h3>
-                    <span className="text-xs uppercase tracking-wider text-ink/40">
+                    <span className="text-xs uppercase tracking-wider text-ink/60">
                       {job.period}
                     </span>
                   </div>
@@ -255,7 +255,7 @@ export default function CvPage() {
               <p className="mt-1 text-sm text-ink/60">
                 Ahmadu Bello University (ABU), Zaria
               </p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-ink/40">
+              <p className="mt-1 text-xs uppercase tracking-wider text-ink/60">
                 Dec 2019 to Sep 2025
               </p>
             </section>
@@ -290,7 +290,7 @@ export default function CvPage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-3 text-xs text-ink/50">
+              <p className="mt-3 text-xs text-ink/60">
                 medium.com/@elliotlucky509 · dev.to/codebigint_01
               </p>
             </section>

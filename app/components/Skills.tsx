@@ -22,7 +22,7 @@ export default function Skills() {
           {GROUPS.map((group, i) => (
             <Reveal key={group.title} delay={i * 70}>
               <div className="flex flex-col gap-3 border-b border-line pb-6 last:border-b-0 sm:flex-row sm:items-center sm:gap-8">
-                <h3 className="w-32 shrink-0 text-sm font-medium text-ink/50">
+                <h3 className="w-32 shrink-0 text-sm font-medium text-ink/60">
                   {group.title}
                 </h3>
                 <div className="flex flex-wrap gap-2.5">

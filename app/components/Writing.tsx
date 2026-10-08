@@ -47,7 +47,7 @@ export default function Writing() {
                 className="group flex items-baseline justify-between gap-4 py-6"
               >
                 <div className="min-w-0">
-                  <span className="text-xs font-medium uppercase tracking-wider text-ink/40">
+                  <span className="text-xs font-medium uppercase tracking-wider text-ink/60">
                     {post.platform}
                   </span>
                   <h3 className="mt-1 text-base font-semibold text-ink underline decoration-transparent decoration-2 underline-offset-4 transition-colors group-hover:decoration-ink sm:text-lg">

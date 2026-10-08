@@ -54,7 +54,7 @@ export default function About() {
             <dl className="space-y-5 border-t border-line pt-6 md:border-t-0 md:border-l md:pl-8 md:pt-0">
               {FACTS.map((fact) => (
                 <div key={fact.label} className="border-b border-line pb-4">
-                  <dt className="text-xs font-medium uppercase tracking-[0.15em] text-ink/40">
+                  <dt className="text-xs font-medium uppercase tracking-[0.15em] text-ink/60">
                     {fact.label}
                   </dt>
                   <dd className="mt-1.5 text-base font-medium text-ink">

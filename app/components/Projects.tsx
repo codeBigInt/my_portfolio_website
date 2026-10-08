@@ -83,7 +83,7 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="group grid grid-cols-1 items-baseline gap-2 py-6 transition-colors sm:grid-cols-[3rem_1fr_auto] sm:gap-6"
               >
-                <span className="text-sm text-ink/35">
+                <span className="text-sm text-ink/60">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>
@@ -93,7 +93,7 @@ export default function Projects() {
                   <p className="mt-1 max-w-xl text-sm leading-relaxed text-ink/60">
                     {project.description}
                   </p>
-                  <p className="mt-2 text-xs uppercase tracking-wider text-ink/40">
+                  <p className="mt-2 text-xs uppercase tracking-wider text-ink/60">
                     {project.stack}
                   </p>
                 </div>

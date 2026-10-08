@@ -83,7 +83,7 @@ export default function Experience() {
                       item.org
                     )}
                   </p>
-                  <p className="mt-1 text-xs uppercase tracking-wider text-ink/40">
+                  <p className="mt-1 text-xs uppercase tracking-wider text-ink/60">
                     {item.period}
                   </p>
                 </div>

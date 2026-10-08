@@ -10,7 +10,7 @@ export default function SectionHeading({
   return (
     <Reveal className="mb-10">
       {eyebrow && (
-        <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-ink/45">
+        <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-ink/60">
           {eyebrow}
         </p>
       )}
