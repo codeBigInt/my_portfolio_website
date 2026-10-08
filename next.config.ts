@@ -19,6 +19,8 @@ const nextConfig: NextConfig = {
     ];
   },
   images: {
+    formats: ["image/avif", "image/webp"],
+    qualities: [60, 75],
     remotePatterns: [
       {
         protocol: "https",
@@ -34,7 +36,7 @@ const nextConfig: NextConfig = {
       },
     },
   },
-  allowedDevOrigins: ['rident-nonservilely-belva.ngrok-free.dev']
+  allowedDevOrigins: ["rident-nonservilely-belva.ngrok-free.dev"],
 };
 
 export default nextConfig;

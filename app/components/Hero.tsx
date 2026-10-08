@@ -83,7 +83,9 @@ export default function Hero() {
                 alt="Elliot Lucky"
                 width={768}
                 height={1132}
-                priority
+                loading="eager"
+                fetchPriority="high"
+                quality={60}
                 sizes="(max-width: 640px) 340px, 460px"
                 className="relative z-10 h-auto w-full object-contain"
               />
