@@ -57,6 +57,16 @@ Content lives in plain arrays at the top of each file, so updates are small edit
 - **Live contribution graph:** reads GitHub's public contribution calendar for `GITHUB_USER` (set in `app/lib/github-contributions.ts`) for the current year, cached with `use cache` and refreshed hourly. If GitHub can't be reached, it falls back to a link to the profile. It shows only what is public on the profile.
 - **Monochrome theme:** colours are defined as tokens in `app/globals.css`.
 
+## SEO
+
+All SEO settings read from `app/lib/site.ts` (site URL, title, description, keywords, social profiles, pages list).
+
+- **Site URL:** set `NEXT_PUBLIC_SITE_URL` in your host (for example `https://yourdomain.com`). It defaults to `https://elliotlucky.vercel.app`.
+- **Metadata:** title template, description, keywords, canonical URLs, Open Graph, Twitter cards and robots directives in `app/layout.tsx` and per page. A generated social card lives in `app/opengraph-image.tsx`.
+- **Structured data:** JSON-LD `WebSite` and `Person` graph in `app/layout.tsx`.
+- **Crawl files:** `/sitemap.xml` (`app/sitemap.ts`), `/sitemap.txt` (`app/sitemap.txt/route.ts`), `/robots.txt` (`app/robots.ts`) and `/llms.txt` (`app/llms.txt/route.ts`).
+- When you add a page, add it to `PAGES` in `app/lib/site.ts` and bump `LAST_UPDATED`.
+
 ## Updating the CV PDF
 
 The PDF is generated from the `/cv` page, so the two stay identical. After editing `app/cv/page.tsx`:

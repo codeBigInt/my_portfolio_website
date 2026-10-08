@@ -5,9 +5,24 @@ import ContributionGraph from "../components/ContributionGraph";
 import ArrowUpRight from "../components/ArrowUpRight";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Elliot Lucky",
+  title: "Portfolio and Open Source Work",
   description:
-    "Open-source contributions and personal projects by Elliot Lucky: Rust, TypeScript, and Midnight blockchain development.",
+    "Open-source contributions and personal projects by Elliot Lucky: merged pull requests to Midnight, Statera, CKB and more, plus a live GitHub contribution graph.",
+  keywords: [
+    "Elliot Lucky portfolio",
+    "open source contributions",
+    "Midnight Network projects",
+    "Compact smart contract projects",
+    "GitHub contributions",
+  ],
+  alternates: { canonical: "/portfolio" },
+  openGraph: {
+    type: "website",
+    url: "/portfolio",
+    title: "Portfolio and Open Source Work | Elliot Lucky",
+    description:
+      "Open-source contributions and personal projects by Elliot Lucky.",
+  },
 };
 
 const STATS = [

@@ -3,9 +3,23 @@ import Link from "next/link";
 import ArrowUpRight from "../components/ArrowUpRight";
 
 export const metadata: Metadata = {
-  title: "CV | Elliot Lucky",
+  title: "Curriculum Vitae",
   description:
-    "CV of Elliot Lucky, full-stack and Midnight blockchain developer. View online or download the PDF.",
+    "CV of Elliot Lucky, full-stack and Midnight blockchain developer. Experience at LucentLabs, KnightShield Wallet, Fluid Tokens and SwiftGigs. View online or download the PDF.",
+  keywords: [
+    "Elliot Lucky CV",
+    "blockchain developer resume",
+    "Midnight developer CV",
+    "full-stack developer resume",
+  ],
+  alternates: { canonical: "/cv" },
+  openGraph: {
+    type: "profile",
+    url: "/cv",
+    title: "Curriculum Vitae | Elliot Lucky",
+    description:
+      "Experience, education, achievements and skills of Elliot Lucky, full-stack and Midnight blockchain developer.",
+  },
 };
 
 const CV_PDF = "/elliot-lucky-cv.pdf";
