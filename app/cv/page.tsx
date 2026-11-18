@@ -109,6 +109,7 @@ const EXPERIENCE = [
 
 const ACHIEVEMENTS = [
   "Midnight Aliit Fellow, Cohort 0: only ambassador representing Nigeria and Africa (Nov 2025)",
+  "Winner, True Markets Global Buildathon: usetenth (2026)",
   "Winner, Midnight London Summit Hackathon: Finance Track, HydraStake (Nov 2025)",
   "Winner, Midnight Mini-DApps Hackathon: Statera (Aug 2025)",
   "Winner, African Blockchain Championship: Midnight Track, FundAGoal (Jul 2025)",

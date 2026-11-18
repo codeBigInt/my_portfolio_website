@@ -4,6 +4,20 @@ import ArrowUpRight from "./ArrowUpRight";
 
 const ACHIEVEMENTS = [
   {
+    title: "Winner: usetenth",
+    org: "True Markets Global Buildathon",
+    period: "2026",
+    description:
+      "Won the global buildathon with usetenth, which keeps a tenth of every stablecoin payment and invests it in tokenized stocks. Now live on mainnet with a Rust backend, Telegram bot and mobile web app.",
+    tag: "Winner",
+    links: [
+      {
+        label: "View project",
+        href: "https://usetenth.vercel.app",
+      },
+    ],
+  },
+  {
     title: "Midnight Aliit Fellow, Cohort 0",
     org: "Midnight Network",
     period: "Nov 2025 to Present",

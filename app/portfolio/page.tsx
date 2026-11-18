@@ -133,7 +133,7 @@ const PERSONAL_PROJECTS = [
   {
     name: "usetenth",
     description:
-      "Hackathon-built chatbot that auto-invests spare income for freelancers.",
+      "Invests a tenth of every stablecoin payment into tokenized stocks. Winner, True Markets Global Buildathon.",
     href: "https://github.com/codeBigInt/usetenth",
   },
   {

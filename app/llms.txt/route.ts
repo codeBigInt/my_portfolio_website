@@ -25,6 +25,7 @@ ${PAGES.map((page) => `- [${page.title}](${url(page.path)}): ${page.description}
 - [KnightShield Wallet](https://knightshieldedwallet.tech): Installable PWA wallet for the Midnight network. Source: https://github.com/Knight-Shield-Wallet/wallet-v2
 - [Statera](https://github.com/statera-protocol/statera-protocol-midnight): Overcollateralized DeFi stablecoin protocol with confidential user metadata. Winner, Midnight Mini-DApps Hackathon.
 - [HydraStake](https://github.com/statera-protocol/hydra-stake-protocol): Privacy-preserving liquid staking protocol. Finance Track winner, Midnight London Summit Hackathon.
+- [usetenth](https://usetenth.vercel.app): Invests a tenth of every stablecoin payment into tokenized stocks through True Markets, with a Rust backend, Telegram bot and mobile web app. Winner, True Markets Global Buildathon.
 - [FundAGoal](https://github.com/codeBigInt/fundagoal): Privacy-focused campaign funding DApp on Midnight. Winner, African Blockchain Championship.
 - [SwiftGigs](https://swiftgigs.com.ng): Service marketplace connecting gig workers with clients in Nigeria.
 

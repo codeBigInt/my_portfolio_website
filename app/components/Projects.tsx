@@ -20,8 +20,8 @@ const PROJECTS = [
   {
     name: "usetenth",
     description:
-      "A hackathon-built chatbot that auto-invests spare income for freelancers, turning stray cash into consistent savings.",
-    stack: "TypeScript · Hackathon · AI",
+      "Keeps a tenth of every stablecoin payment and invests it in tokenized stocks through True Markets. Rust backend, Telegram bot and mobile web app, live on mainnet. Winner at the True Markets Global Buildathon.",
+    stack: "Rust · Next.js · Base · Solana",
     href: "https://usetenth.vercel.app",
   },
   {
